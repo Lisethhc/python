@@ -1,6 +1,6 @@
 import random
 
-print("****GENERADOR DE CONTRASEÑAS****")
+print("***GENERADOR DE CONTRASEÑAS***")
 
 def generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud):
     caracteres_disponibles = []

@@ -59,3 +59,30 @@ longitud = int(input("Indique longitud de la contraseña: "))
 #Aqui se imprime para mostrar al usuario la contraseña que se generó.
 
 print("Contraseña generada:", generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud))
+
+***GENERADOR DE CONTRASEÑAS***
+Indique número mínimo de minúsculas: 5
+Indique número mínimo de mayúsculas: 2
+Indique número mínimo de caracteres numéricos: 8
+Indique longitud de la contraseña: 10
+Contraseña generada: Numero de requisito mayor a la longitud permitida
+
+***GENERADOR DE CONTRASEÑAS***
+Indique número mínimo de minúsculas: 5
+Indique número mínimo de mayúsculas: 2
+Indique número mínimo de caracteres numéricos: 1
+Indique longitud de la contraseña: 10
+Contraseña generada: Gwnk14dZjp
+
+***GENERADOR DE CONTRASEÑAS***
+Indique número mínimo de minúsculas: 3
+Indique número mínimo de mayúsculas: 1
+Indique número mínimo de caracteres numéricos: 5
+Indique longitud de la contraseña: 11
+Contraseña generada: 8gKS24V3u6z
+
+Poryecto numeros par e impar
+
+***Ejercicio numeros pares e impares***
+Por favor ingresar un número entero: 5
+5 es un numero impar

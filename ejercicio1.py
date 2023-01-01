@@ -1,3 +1,5 @@
+print("***Ejercicio numeros pares e impares***")
+
 try:
     numero = int(input("Por favor ingresar un número entero: "))
     if numero % 2 == 0:
