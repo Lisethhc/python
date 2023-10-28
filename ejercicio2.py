@@ -28,10 +28,14 @@ def generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud):
 
     return contrasena
 
+while True:
+    min_minuscula = int(input("Indique número mínimo de minúsculas: "))
+    min_mayuscula = int(input("Indique número mínimo de mayúsculas: "))
+    min_numeros = int(input("Indique número mínimo de caracteres numéricos: "))
+    longitud = int(input("Indique longitud de la contraseña: "))
 
-min_minuscula = int(input("Indique número mínimo de minúsculas: "))
-min_mayuscula = int(input("Indique número mínimo de mayúsculas: "))
-min_numeros = int(input("Indique número mínimo de caracteres numéricos: "))
-longitud = int(input("Indique longitud de la contraseña: "))
+    print("SU CONTRASEÑA:", generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud))
 
-print("Contraseña generada:", generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud))
+    respuesta = input("¿Desea continuar? (s/n): ")
+    if respuesta.lower() != 's':
+        break

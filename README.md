@@ -49,37 +49,47 @@ def generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud):
 
     return contrasena
 
-#En esta parte se solicita al usuario las cantidades minimas de minusculas, mayusculas, numeros y la longitud para poder realizar la contraseña.
+#En esta parte se solicita al usuario las cantidades minimas de minusculas, mayusculas, numeros y la longitud para poder realizar la contraseña, se crea el While para hacer la repeticion si el usuario quiere seguir generando contraseñas.
 
-min_minuscula = int(input("Indique número mínimo de minúsculas: "))
-min_mayuscula = int(input("Indique número mínimo de mayúsculas: "))
-min_numeros = int(input("Indique número mínimo de caracteres numéricos: "))
-longitud = int(input("Indique longitud de la contraseña: "))
+while True:
+    min_minuscula = int(input("Indique número mínimo de minúsculas: "))
+    min_mayuscula = int(input("Indique número mínimo de mayúsculas: "))
+    min_numeros = int(input("Indique número mínimo de caracteres numéricos: "))
+    longitud = int(input("Indique longitud de la contraseña: "))
 
 #Aqui se imprime para mostrar al usuario la contraseña que se generó.
 
-print("Contraseña generada:", generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud))
+    print("Contraseña generada:", generar_contrasena(min_minuscula, min_mayuscula, min_numeros, longitud))
+
+#Se le pregunta al usuario si quiere continuar generando contraseñas, si la respuesta es s implementando el metodo lower para convertirlo a minuscula el bucle no se detiene, si es diferente a "s" se detiene.    
+
+    respuesta = input("¿Desea continuar? (s/n): ")
+    if respuesta.lower() != 's':
+        break
 
 ***GENERADOR DE CONTRASEÑAS***
 Indique número mínimo de minúsculas: 5
 Indique número mínimo de mayúsculas: 2
 Indique número mínimo de caracteres numéricos: 8
 Indique longitud de la contraseña: 10
-Contraseña generada: Numero de requisito mayor a la longitud permitida
+SU CONTRASEÑA: zjaws1FhDp
+¿Desea continuar? (s/n): s
 
 ***GENERADOR DE CONTRASEÑAS***
 Indique número mínimo de minúsculas: 5
 Indique número mínimo de mayúsculas: 2
 Indique número mínimo de caracteres numéricos: 1
 Indique longitud de la contraseña: 10
-Contraseña generada: Gwnk14dZjp
+SU CONTRASEÑA: Gwnk14dZjp
+¿Desea continuar? (s/n): s
 
 ***GENERADOR DE CONTRASEÑAS***
 Indique número mínimo de minúsculas: 3
 Indique número mínimo de mayúsculas: 1
 Indique número mínimo de caracteres numéricos: 5
 Indique longitud de la contraseña: 11
-Contraseña generada: 8gKS24V3u6z
+SU CONTRASEÑA: 8gKS24V3u6z
+¿Desea continuar? (s/n): s
 
 Poryecto numeros par e impar
 
